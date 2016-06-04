@@ -5,7 +5,7 @@ prompt tools with this tool.
 ```
 cd ~
 git clone https://github.com/awstlaur/bash-git-prompt.git .bash-git-prompt --depth=1
-echo .bash-git-prompt/bash-profile >> ~/.bash_profile
+cat .bash-git-prompt/bash-profile >> ~/.bash_profile
 source ~/.bash_profile
 ```
 If desired, edit the`GIT_PROMPT_THEME` variable in `~/.bash_profile`. The default
