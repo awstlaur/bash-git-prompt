@@ -11,6 +11,18 @@ source ~/.bash_profile
 If desired, edit the`GIT_PROMPT_THEME` variable in `~/.bash_profile`. The default
 is the OnShape theme, which can be view at `themes/OnShape`.
 
+### Bonus: `git lg` and `gb`
+These are also useful. Attributed to Kevin O'Toole.
+A better `git log`:
+```
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+
+A better `git branch`:
+```
+alias gb='cur=$(git rev-parse --abbrev-ref HEAD); git for-each-ref --sort=-committerdate refs/heads/ --format="%(color:reset)  %(refname:short)|%(color:black bold)%(committerdate:relative)%(color:reset)" | column -ts"|" | sed -e "s,  ${cur},$(tput setaf 2)$(tput bold)* ${cur},";'
+```
+
 # Informative git prompt for bash and fish
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/magicmonty/bash-git-prompt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
