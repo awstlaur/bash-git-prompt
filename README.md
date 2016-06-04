@@ -1,3 +1,16 @@
+# Why this fork exists
+I forked this for my fellow devs at OnShape to integrate some pre-existing bash
+prompt tools with this tool.
+## Quick Install
+```
+cd ~
+git clone https://github.com/awstlaur/bash-git-prompt.git .bash-git-prompt --depth=1
+echo .bash-git-prompt/bash-profile >> ~/.bash_profile
+source ~/.bash_profile
+```
+If desired, edit the`GIT_PROMPT_THEME` variable in `~/.bash_profile`. The default
+is the OnShape theme, which can be view at `themes/OnShape`.
+
 # Informative git prompt for bash and fish
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/magicmonty/bash-git-prompt?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
