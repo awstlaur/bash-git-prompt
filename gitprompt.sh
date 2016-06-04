@@ -409,8 +409,12 @@ function checkUpstream() {
   then
     if [[ -n $(git remote show) ]]; then
       (
-        async_run "git fetch --quiet"
-        disown -h
+        if [[ ${GIT_PROMPT_RUN_SYNC} == 1 ]]; then
+          git fetch --quiet
+        else
+          async_run "git fetch --quiet"
+          disown -h
+        fi
       )
     fi
   fi
@@ -482,7 +486,7 @@ function updatePrompt() {
       if [[ "x$2" == "x-n" ]] ; then
         v="$2 \"\$GIT_$1\""
       else
-        v="\"\$GIT_$1 $2\""
+        v="\$GIT_$1 $2"
       fi
       if eval "test $v" ; then
         if [[ $# -lt 2 || "$3" != '-' ]]; then
