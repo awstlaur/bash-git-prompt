@@ -2,6 +2,8 @@
 I forked this for my fellow devs at OnShape to integrate some pre-existing bash
 prompt tools with this tool.
 ## Quick Install
+Depending on your setup, you may need to replace `~/.bash_profile` with `~/.bashrc`
+in the following steps.
 ```
 cd ~
 git clone https://github.com/awstlaur/bash-git-prompt.git .bash-git-prompt --depth=1
