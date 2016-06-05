@@ -11,7 +11,7 @@ cat .bash-git-prompt/bash-profile >> ~/.bash_profile
 source ~/.bash_profile
 ```
 If desired, edit the`GIT_PROMPT_THEME` variable in `~/.bash_profile`. The default
-is the OnShape theme, which can be viewed at `themes/OnShape`.
+is the OnShape theme, which can be viewed at `themes/OnShape.bgptheme`.
 
 ### Bonus: `git lg` and `gb`
 These are also useful. Attributed to Kevin O'Toole.
