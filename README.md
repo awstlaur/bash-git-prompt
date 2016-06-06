@@ -1,5 +1,5 @@
 # Why this fork exists
-I forked this for my fellow devs at OnShape to integrate some pre-existing bash
+I forked this for my fellow devs at Onshape to integrate some pre-existing bash
 prompt tools with this tool.
 ## Quick Install
 Depending on your setup, you may need to replace `~/.bash_profile` with `~/.bashrc`
@@ -11,7 +11,7 @@ cat .bash-git-prompt/bash-profile >> ~/.bash_profile
 source ~/.bash_profile
 ```
 If desired, edit the`GIT_PROMPT_THEME` variable in `~/.bash_profile`. The default
-is the OnShape theme, which can be viewed at `themes/OnShape.bgptheme`.
+is the Onshape theme, which can be viewed at `themes/Onshape.bgptheme`.
 
 ### Bonus: `git lg` and `gb`
 These are also useful. Attributed to Kevin O'Toole.
